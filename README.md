@@ -1,1 +1,1 @@
-# -hse_hw2_chip
+# hse_hw2_chip
