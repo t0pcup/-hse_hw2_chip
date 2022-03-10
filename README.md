@@ -1,5 +1,11 @@
 # hse_hw2_chip
 
+**Все задания выполнялись в Google Claboratory:**
+
+[Основная часть](https://colab.research.google.com/drive/1sKNk2RKphO2Uzwe9n0nMSuCRYak30Lqo?usp=sharing)
+
+[Бонус](https://colab.research.google.com/drive/1Gis59LFwvmh0mzzqfmPkNfLbZD0vmKOo?usp=sharing)
+
 ## Отчеты FastQC
 
 Рассмотрим отчеты, полученные на оригинальных данных.
