@@ -6,25 +6,25 @@
 
 ### Реплика 1 (ENCFF891GXF)
 
-![GXF](pictures\sequence_quality_GXF.png)
+![GXF](pictures/sequence_quality_GXF.png)
 
-![GXF](pictures\per_tile_sequence_quality_GXF.png)
+![GXF](pictures/per_tile_sequence_quality_GXF.png)
 
-![GXF](pictures\GC_content_GXF.png)
+![GXF](pictures/GC_content_GXF.png)
 
-![GXF](pictures\duplication_GXF.png)
+![GXF](pictures/duplication_GXF.png)
 
 Единственный график в отчете, который подозрителен (имел ворнинг) - это распределение GC, можно увидеть, что распределение неравномерное. Не смотря на это, я не считаю нужной и полезной дополнительную обработку данных для этой реплики. Отчет показал, что качество данных достаточное для работы с ними.
 
 ### Реплика 2 (ENCFF170YTR)
 
-![YTR](pictures\sequence_quality_YTR.png)
+![YTR](pictures/sequence_quality_YTR.png)
 
-![YTR](pictures\per_tile_sequence_quality_YTR.png)
+![YTR](pictures/per_tile_sequence_quality_YTR.png)
 
-![YTR](pictures\GC_content_YTR.png)
+![YTR](pictures/GC_content_YTR.png)
 
-![YTR](pictures\duplication_YTR.png)
+![YTR](pictures/duplication_YTR.png)
 
 С распределением GC явно что-то пошло не так ¯\\\_(ツ)_/¯ Очевидно, что в некоторых последовательностях количество CG зашкаливает, на фоне низкого количества этих нуклеотидов в других. Что примечательно, общее распределение смещено относительно теоритического в сторону меньшего процента (общая доля CG = 47%), но можно видеть сильный пик именно в центре предполагаемого распределения (53%).
 
@@ -41,17 +41,17 @@
 
 2. Загрязненное чтение
 
-Я пришла к выводу, что это адаптер (как и указано в предположенном источнике) и качество реплики не такое высокое, каким могло бы быть. [Обработка](reports\ENCFF170YTR_trimmed_fastqc.html) этой проблемы решить не сможет.
+Я пришла к выводу, что это адаптер (как и указано в предположенном источнике) и качество реплики не такое высокое, каким могло бы быть. [Обработка](reports/ENCFF170YTR_trimmed_fastqc.html) этой проблемы решить не сможет.
 
 ### Контроль (эксперимент ENCSR549SVK, ENCFF524OKJ)
 
-![OKJ](pictures\sequence_quality_OKJ.png)
+![OKJ](pictures/sequence_quality_OKJ.png)
 
-![OKJ](pictures\per_tile_sequence_quality_OKJ.png)
+![OKJ](pictures/per_tile_sequence_quality_OKJ.png)
 
-![OKJ](pictures\GC_content_OKJ.png)
+![OKJ](pictures/GC_content_OKJ.png)
 
-![OKJ](pictures\duplication_OKJ.png)
+![OKJ](pictures/duplication_OKJ.png)
 
 Если в репликах _Per Tile Sequence Quality_ не выделялся совершенно никак, то на контроле заметна неоднородность полей хитмапа, но ничего критичного.
 
@@ -63,7 +63,7 @@
 284634  | 1.044% | TruSeq Adapter, Index 21 (98% over 51bp)
 27347   | > 0.1% | TruSeq Adapter, Index 21 (97% over 39bp)
 
-Такая же проблема "загрязнения", вдобавок график распределения CG схож с образцом _YTR_. [Обработка](reports\ENCFF524OKJ_trimmed_fastqc.html) не дала значимых улучшений:
+Такая же проблема "загрязнения", вдобавок график распределения CG схож с образцом _YTR_. [Обработка](reports/ENCFF524OKJ_trimmed_fastqc.html) не дала значимых улучшений:
 
 1. Из _Overrepresented sequences_ пропала самая короткая последовательность, но она и так находилась на уровне ворнинга, а не проблемы (~0.1% при допустимом <=1%).
 
